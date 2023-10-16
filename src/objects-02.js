@@ -88,7 +88,7 @@ const colorHexCodes = {
  * must use colorHexCodes as a lookup table
  */
 function getColorValue(color) {
-  // write your code here & return value
+  return colorHexCodes[color];
 }
 
 /**
@@ -109,7 +109,8 @@ function getColorValue(color) {
  * Or - https://mzl.la/3DnsESS
  */
 function testForColor(color) {
-  // write your code here & return value
+  const colors = Object.keys(colorHexCodes);
+  return colors.includes(color);
 }
 
 module.exports = {
